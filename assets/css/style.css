@@ -12,10 +12,14 @@ body {
 #header1 {
     color: white;
     font-size: 250%;
+    animation-name: header1anime;
+    animation-duration: 1s;
 }
 #header2 {
     color: white;
     font-size: 150%;
+    animation-name: header2anime;
+    animation-duration: 1s;
 }
 #trainschedule {
     border: 1px solid #000000;
@@ -38,8 +42,42 @@ body {
     background-color: rgb(59, 59, 204);
     padding: 10px;
     width: 960px;
+    animation-name: addtrain1;
+    animation-duration: 1s;
 }
 table {
     width: 960px;
     font-weight: bold;
+}
+
+/* ANIMATION */
+
+@keyframes header1anime {
+    0% {
+        margin: 0px 500px 0px 0px;
+        font-size: 75%; 
+        color: blue;
+    }
+    100% {
+        margin: 0px 0px 0px 0px; 
+    }
+}
+@keyframes header2anime {
+    0% {
+        margin: 0px 0px 0px 500px; 
+        font-size: 75%;
+        color: blue;
+    }
+    100% {
+        margin: 0px 0px 0px 0px; 
+    }
+}
+@keyframes addtrain1 {
+    0% {
+        font-size: 75%;
+        color: blue;
+    }
+    100% {
+        margin: 0px 0px 0px 0px; 
+    }
 }

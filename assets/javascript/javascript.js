@@ -26,6 +26,6 @@ $(document).ready(function(){
         inputDestination: Destination,
         inputFirsttraintime: Firsttraintime,
         inputFrequency: Frequency,
-      })
+        })
     });
 });
